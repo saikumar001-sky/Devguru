@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .hover-main-card{
+        @apply shadow-sm hover:font-medium hover:bg-red-100 text-center hover:shadow-2xl transform transition duration-500  pt-5 rounded-lg h-32
+    }
+}
