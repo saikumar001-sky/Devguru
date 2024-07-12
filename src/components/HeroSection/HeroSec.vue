@@ -46,8 +46,15 @@ import baseIcon from "../../assets/icons/base-icon.svg"
 import jwtIcon from "../../assets/icons/jwt-icon.png"
 import colorIcon from "../../assets/icons/color-icon.svg"
 import textIcon from "../../assets/icons/text.svg"
+import jsIcon from "../../assets/icons/jslogo.svg"
 const router=useRouter()
 const tools = ref([
+{
+    title: "JS Compiler",
+    icon: jsIcon,
+    route: "/js-compiler",
+    isActive: false
+  },
   {
     title: "Image Compressor",
     icon: imageIcon,

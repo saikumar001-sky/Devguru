@@ -97,6 +97,6 @@ select {
   background-size: contain;
   /* background-color: rgba(255, 255, 255, 0.1); */
 }
-.main-content-section {
- 
+.logger-height{
+  height: 67vh;
 }
