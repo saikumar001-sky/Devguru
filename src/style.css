@@ -100,3 +100,6 @@ select {
 .logger-height{
   height: 67vh;
 }
+input[type='file']{
+  display: none;
+}

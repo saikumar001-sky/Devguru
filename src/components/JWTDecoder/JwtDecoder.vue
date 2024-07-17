@@ -23,11 +23,11 @@
     <div class="basis-2/4 p-4">
       <div class="mb-2">
         <p class="font-normal">HEADER: Algorithm & Token type</p>
-        <textarea v-model="decodedHeader" id="editor"></textarea>
+        <textarea class="h-32 w-full flex p-4 text-green-700 font-medium" v-model="decodedHeader"></textarea>
       </div>
       <p>PAYLOAD:Data</p>
       <div>
-        <textarea v-model="decodedJWT" id="editor1"></textarea>
+        <textarea v-model="decodedJWT" class="h-44 w-full flex p-4 text-blue-800 font-medium"></textarea>
       </div>
     </div>
   </div>
