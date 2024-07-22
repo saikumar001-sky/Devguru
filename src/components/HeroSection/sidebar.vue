@@ -1,15 +1,17 @@
 <template>
-  <div class="w-1/4 h-5/6 m-auto">
+  <div class="bg-slate-50 md:bg-transparent p-3 w-full md:w-1/4 md:h-5/6 m-auto">
     <!-- <div> <input type="text" class="border w-full p-3 focus:border-primary"></div> -->
-    <div class="grid grid-cols-2 gap-3">
+    <div class="grid grid-cols-3 md:grid-cols-2 gap-3">
       <button
         v-for="(tool, index) in tools"
         :key="index"
         :class="{ 'bg-red-100': tool.route == route.name }"
-        class="hover-main-card dark:bg-white"
+        class="hover-main-card bg-white md:bg-inherit dark:bg-white"
         @click="navigateTool(tool)"
       >
-        <div><img :src="tool.icon" class="w-12 m-auto" />{{ tool.title }}</div>
+        <div class="text-xs md:text-base">
+          <img :src="tool.icon" class="w-6 md:w-12 m-auto" />{{ tool.title }}
+        </div>
       </button>
     </div>
   </div>

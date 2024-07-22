@@ -1,21 +1,21 @@
 <template>
   <div class="w-100">
-    <div class="flex gap-3 items-center">
+    <div class="md:flex md:gap-3 items-center">
       <input
         type="text"
-        class="h-11 w-2/4 p-4 rounded-sm"
+        class="h-20 md:h-11 w-full md:w-2/4 p-4 rounded-sm"
         placeholder="Enter UUID"
         v-model="uuid"
       />
       <button
         @click="decodeUUID"
-        class="bg-primary-500 h-10 text-center px-3 rounded-md hover:bg-primary-800 hover:shadow-md text-white"
+        class="bg-primary-500 mt-4 md:mt-0 h-10 text-center px-3 rounded-md hover:bg-primary-800 hover:shadow-md text-white"
       >
         Decode UUID
       </button>
     </div>
-    <div>
-      <p class="font-medium">Result:</p>
+    <p class="font-medium">Result:</p>
+    <div class="overflow-auto text-sm md:text-base">
       <table class="border bg-white my-4" v-if="decodedUUID">
         <tr class="border">
           <td class="p-3">Standard String Format</td>

@@ -1,17 +1,17 @@
 <template>
   <div class=" w-100 bg-transparent">
-    <header class="dark:bg-gray-800 dark:text-white p-2 flex px-4 shadow-sm">
+    <header class="dark:bg-gray-800 bg-primary-100 dark:text-white p-2 flex px-4 shadow-sm">
       <img src="../../assets/icons/id-icon.svg" class="w-12" />
       <p class="ms-4 mt-4 font-bold text-xl">UUID Generator</p>
     </header>
     <main class="dark:bg-gray-700">
-      <div class="bg-gray-200">
+      <div class="bg-gray-200 p-2 md:p-0">
         <button
           v-for="(tab, index) in tabs"
           :key="index"
           @click="activateTab(tab)"
           :class="{ 'bg-primary-500 text-white': tab.isActive }"
-          class="p-3 hover:shadow-md hover:bg-primary-500"
+          class="p-1  md:p-3 hover:shadow-md hover:bg-primary-500"
         >
           {{ tab.title }}
         </button>

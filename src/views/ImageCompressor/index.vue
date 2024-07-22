@@ -1,10 +1,10 @@
 <template>
   <div class="w-100 bg-transparent">
-    <header class="dark:bg-gray-800 dark:text-white p-2 flex px-4 shadow-sm">
+    <header class="dark:bg-gray-800 bg-primary-100 dark:text-white p-2 flex px-4 shadow-sm">
       <img src="../../assets/icons/image-icon.svg" class="w-12" />
       <p class="ms-4 mt-4 font-bold text-xl">Image Compressor</p>
     </header>
-    <main class="dark:bg-gray-700 bg-slate-50 p-4">
+    <main class="dark:bg-gray-700 bg-slate-50 p-2 md:p-4">
       <div class="w-100 flex">
         <label
           for="imgId"
@@ -14,7 +14,7 @@
         <input @change="previewFiles" id="imgId" type="file" cept="image/*" />
       </div>
       <div
-        class="w-100 bg-primary-50 flex p-3 m-3 gap-6 items-center"
+        class="w-100 bg-primary-50 md:flex p-3 m-3 gap-6 items-center"
         v-if="imageData && imageData[0].name"
       >
         <div class="bg-white p-3">
@@ -47,7 +47,7 @@
         </div>
         <div class="bg-white p-3 my-3">
           <p class="text-xl text-secondary font-medium">COMPRESSED IMAGE:</p>
-          <div class="flex">
+          <div class="md:flex">
             <div class="bg-primary-50 flex p-1 my-2 rounded-md">
               <div>
                 <p class="font-medium">Quality</p>
@@ -57,7 +57,7 @@
                 <span class="font-medium"> {{ qualitySlider }} %</span>
               </p>
             </div>
-            <div class="bg-primary-50 flex p-1 my-2 ms-3 rounded-md">
+            <div class="bg-primary-50 flex p-1 my-2 md:ms-3 rounded-md">
               <div>
                 <p class="font-medium">Resizing</p>
                 <input
@@ -73,12 +73,12 @@
             <a
               id="donwloadImage"
               download
-              class="bg-primary-500 h-10 mt-4 pt-2 ms-3 text-center px-3 rounded-md hover:bg-primary-800 hover:shadow-md text-white"
+              class="bg-primary-500 p-3 md:p-0 h-10 mt-4 pt-2 ms-3 text-center px-3 rounded-md hover:bg-primary-800 hover:shadow-md text-white"
               >Download</a
             >
           </div>
 
-          <img id="compressedImage" />
+          <img id="compressedImage" class="mt-4 md:m-0" />
           {{ compressedSize }}
         </div>
       </div>

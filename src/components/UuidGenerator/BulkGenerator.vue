@@ -19,7 +19,7 @@
       />
       <button
         @click="generateBulkUUID(no_of_uuids)"
-        class="bg-primary-500  h-10 text-center  px-3 rounded-md hover:bg-primary-800 hover:shadow-md text-white ms-2"
+        class="bg-primary-500 mt-4 md:mt-0  h-10 text-center  px-3 rounded-md hover:bg-primary-800 hover:shadow-md text-white ms-2"
       >
         Generate
       </button>
@@ -38,7 +38,7 @@
     </div>
     <div class="flex gap-3 items-center">
       <div
-        class="text-center w-full grid grid-cols-2 bg-slate-100 p-3 rounded-lg"
+        class="text-center w-full grid grid-cols-1 md:grid-cols-2 bg-slate-100 p-3 rounded-lg"
       >
         <p v-for="uuid in bulkUUIDs" :key="uuid">{{ uuid }}</p>
       </div>

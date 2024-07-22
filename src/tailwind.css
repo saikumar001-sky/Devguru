@@ -4,6 +4,6 @@
 
 @layer components{
     .hover-main-card{
-        @apply shadow-sm hover:font-medium hover:bg-red-100 text-center hover:shadow-2xl transform transition duration-500  pt-5 rounded-lg h-32
+        @apply shadow-sm hover:bg-red-100 text-center hover:shadow-2xl transform transition duration-500 p-3 md:pt-5 rounded-lg md:h-32
     }
 }

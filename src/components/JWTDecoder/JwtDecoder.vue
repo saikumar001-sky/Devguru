@@ -1,5 +1,5 @@
 <template>
-  <div class="w-100 flex">
+  <div class="w-100 md:flex">
     <div class="basis-3/4">
       <label for="token">Enter Your JWT Token</label>
       <div class="flex gap-3 items-center">
@@ -20,7 +20,7 @@
         </button>
       </div>
     </div>
-    <div class="basis-2/4 p-4">
+    <div class="basis-2/4 md:p-4">
       <div class="mb-2">
         <p class="font-normal">HEADER: Algorithm & Token type</p>
         <textarea class="h-32 w-full flex p-4 text-green-700 font-medium" v-model="decodedHeader"></textarea>

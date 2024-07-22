@@ -1,6 +1,6 @@
 <template>
   <div class="w-100">
-    <div class="flex gap-3">
+    <div class="md:flex gap-3">
       <div class="basis-3/5">
         <button
           @click="EncodeData"
@@ -40,7 +40,7 @@
       </div>
     </div>
 
-    <div class="flex">
+    <div class="md:flex">
       <div class="w-100 h-52 my-5 basis-3/5">
         <div class="w-full">
           <label

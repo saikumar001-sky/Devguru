@@ -2,7 +2,7 @@
   <div class="main-wrapper w-100 dark:bg-gray-700">
     <navbar />
     <main
-      class=" main-section px-10 m-auto flex flex-row gap-6"
+      class=" main-section p-2 md:px-10 m-auto md:flex flex-row gap-6"
     >
       <sidebar />
       <div class="m-auto h-5/6 w-full main-content-section">
