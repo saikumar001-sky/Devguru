@@ -4,7 +4,7 @@
     <div class="grid grid-cols-2 gap-3">
       <button
         v-for="(tool, index) in tools"
-        :keys="index"
+        :key="index"
         :class="{ 'bg-red-100': tool.route == route.name }"
         class="hover-main-card dark:bg-white"
         @click="navigateTool(tool)"
@@ -65,18 +65,18 @@ const tools = ref([
     isActive: false
   },
 
-  {
-    title: "Color Picker and Converter",
-    icon: colorIcon,
-    route: "color-picker",
-    isActive: false
-  },
-  {
-    title: "Text Compare",
-    icon:textIcon ,
-    route: "text-diff-checker",
-    isActive: false
-  }
+  // {
+  //   title: "Color Picker and Converter",
+  //   icon: colorIcon,
+  //   route: "color-picker",
+  //   isActive: false
+  // },
+  // {
+  //   title: "Text Compare",
+  //   icon:textIcon ,
+  //   route: "text-diff-checker",
+  //   isActive: false
+  // }
 ]
 );
 const navigateTool = (tool) => {

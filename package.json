@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "codemirror": "^5.65.16",
+    "uuidx4-generator": "^0.0.1",
     "vue": "^3.4.29",
     "vue-router": "^4.4.0"
   },

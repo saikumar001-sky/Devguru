@@ -1,8 +1,8 @@
 <template>
-  <div class="main-wrapper w-100">
+  <div class="main-wrapper w-100 dark:bg-gray-700">
     <navbar />
     <main
-      class="dark:bg-gray-700 main-section px-10 m-auto flex flex-row gap-6"
+      class=" main-section px-10 m-auto flex flex-row gap-6"
     >
       <sidebar />
       <div class="m-auto h-5/6 w-full main-content-section">

@@ -35,6 +35,16 @@ const routes = [
     name:"image-compressor",
     component: () => import("../views/ImageCompressor/index.vue"),
   },
+  {
+    path: "/color-picker",
+    name:"color-picker",
+    component: () => import("../views/ColorPicker/colorPicker.vue"),
+  },
+  {
+    path: "/base64-generator",
+    name:"base64-generator",
+    component: () => import("../views/Base64/base64.vue"),
+  },
 ];
 
 const router = createRouter({
