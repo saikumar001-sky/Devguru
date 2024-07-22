@@ -12,7 +12,7 @@
         <textarea
           type="text"
           class="h-40 w-full text-secondary p-4 rounded-sm"
-          placeholder="Enter UUID"
+          placeholder="Enter Encoded text"
           v-model="baseValue"
         ></textarea>
       </div>
@@ -97,7 +97,7 @@
         <div>
           <button
             @click="copyText(uploadedImage)"
-            class="bg-slate-300 h-10 text-center px-3 rounded-md hover:bg-slate-400 hover:shadow-md"
+            class="bg-slate-300 mt-12 md:mt-0 h-10 text-center px-3 rounded-md hover:bg-slate-400 hover:shadow-md"
           >
             Copy
           </button>

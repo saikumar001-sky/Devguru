@@ -12,7 +12,7 @@
         <textarea
           type="text"
           class="h-40 w-full text-secondary p-4 rounded-sm"
-          placeholder="Enter UUID"
+          placeholder="Enter Encoded text"
           v-model="baseValue"
         ></textarea>
       </div>
@@ -42,7 +42,7 @@
         >
           Decode and Download Image
         </button>
-        <p class="font-medium">Upload Image to encode:</p>
+        <p class="font-medium">Enter encoded image text:</p>
         <textarea
           class="h-52 w-full flex p-4 text-green-700 font-medium"
           v-model="uploadedImage"
