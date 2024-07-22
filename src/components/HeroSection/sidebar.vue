@@ -15,9 +15,6 @@
         <div class="text-xs md:text-base">
           <img :src="tool.icon" class="w-6 md:w-12 m-auto" />{{ tool.title }}
         </div>
-        <div class="text-xs md:text-base">
-          <img :src="tool.icon" class="w-6 md:w-12 m-auto" />{{ tool.title }}
-        </div>
       </button>
     </div>
   </div>
