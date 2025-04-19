@@ -45,6 +45,11 @@ const routes = [
     name:"base64-generator",
     component: () => import("../views/Base64/base64.vue"),
   },
+  {
+    path: "/box-shadows",
+    name:"box-shadows",
+    component: () => import("../views/BoxShadows/index.vue"),
+  },
 ];
 
 const router = createRouter({

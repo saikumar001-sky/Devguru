@@ -30,6 +30,7 @@ import colorIcon from "../../assets/icons/color-icon.svg"
 import textIcon from "../../assets/icons/text.svg"
 import jsIcon from "../../assets/icons/jslogo.svg"
 import HtmlIcon from "../../assets/icons/htmlicon.svg"
+import SqaureShadow from "../../assets/icons/square-shadow.png"
 const router=useRouter()
 const route=useRoute()
 const tools = ref([
@@ -67,6 +68,12 @@ const tools = ref([
     title: "Base64 Generator",
     icon: baseIcon,
     route: "base64-generator",
+    isActive: false
+  },
+  {
+    title: "Box Shadows",
+    icon: SqaureShadow,
+    route: "box-shadows",
     isActive: false
   },
 
