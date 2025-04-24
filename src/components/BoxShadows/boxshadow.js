@@ -1,558 +1,482 @@
-export const shadows = [
+export const shadows =  [
   {
-    title: "Colorful Glow 1",
-    value: "12px 14px 10px  rgba(0, 0, 0, 0.18)",
-    source: "HTMLCSSFreebies",
+    title: "#0",
+    source: "",
+    value: "rgba(149, 157, 165, 0.2) 0px 8px 24px"
   },
   {
-    title: "Light 2",
-    value:
-      "7px 13px 10px  rgba(0, 0, 0, 0.11), 6px 6px 11px  rgba(0, 0, 0, 0.16)",
-    source: "CSS Scan",
+    title: "#1",
+    source: "",
+    value: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
   },
   {
-    title: "3D Shadow 3",
-    value: "2px 13px 20px  rgba(0, 0, 0, 0.24)",
-    source: "HTMLCSSFreebies",
+    title: "#2",
+    source: "",
+    value: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"
   },
   {
-    title: "Material Design Elevation 4",
-    value: "1px 1px 18px  rgba(0, 0, 0, 0.24)",
-    source: "HTMLCSSFreebies",
+    title: "#3",
+    source: "",
+    value: "rgba(0, 0, 0, 0.35) 0px 5px 15px"
   },
   {
-    title: "Hard 5",
-    value:
-      "12px 3px 4px  rgba(0, 0, 0, 0.19), 11px 15px 17px  rgba(0, 0, 0, 0.17), 8px 5px 11px  rgba(0, 0, 0, 0.29)",
-    source: "CSS Tricks",
+    title: "#4",
+    source: "by 3drops",
+    value: "rgba(0, 0, 0, 0.16) 0px 1px 4px"
   },
   {
-    title: "Hard 6",
-    value: "10px 1px 7px 6px rgba(0, 0, 0, 0.25)",
-    source: "DEV Community",
+    title: "#5",
+    source: "",
+    value: "rgba(0, 0, 0, 0.24) 0px 3px 8px"
   },
   {
-    title: "Colorful Glow 7",
-    value: "1px 2px 12px 0px rgba(0, 0, 0, 0.24)",
-    source: "DEV Community",
+    title: "#6",
+    source: "",
+    value: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
   },
   {
-    title: "Material Design Elevation 8",
-    value:
-      "inset 15px 15px 17px  rgba(0, 0, 0, 0.18), 13px 6px 12px  rgba(0, 0, 0, 0.29), inset 8px 1px 16px  rgba(0, 0, 0, 0.16)",
-    source: "Material Design",
+    title: "#7",
+    source: "",
+    value: "rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px"
   },
   {
-    title: "Outer Glow 9",
-    value:
-      "7px 4px 19px  rgba(0, 0, 0, 0.17), inset 6px 1px 7px  rgba(0, 0, 0, 0.3)",
-    source: "CSS Tricks",
+    title: "#8",
+    source: "",
+    value: "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px"
   },
   {
-    title: "Colorful Glow 10",
-    value:
-      "inset 13px 9px 5px  rgba(0, 0, 0, 0.14), inset 8px 8px 11px 4px rgba(0, 0, 0, 0.25), 5px 1px 10px  rgba(0, 0, 0, 0.11)",
-    source: "Material Design",
+    title: "#9",
+    source: "by Sketch",
+    value: "rgba(0, 0, 0, 0.1) 0px 4px 12px"
   },
   {
-    title: "Inset 11",
-    value: "5px 13px 19px  rgba(0, 0, 0, 0.17)",
-    source: "CSS Scan",
+    title: "#10",
+    source: "",
+    value: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px"
   },
   {
-    title: "Material Design Elevation 12",
-    value:
-      "8px 13px 17px  rgba(0, 0, 0, 0.21), 4px 9px 6px  rgba(0, 0, 0, 0.16)",
-    source: "HTMLCSSFreebies",
+    title: "#11",
+    source: "by Sketch",
+    value: "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px"
   },
   {
-    title: "Inset 13",
-    value: "12px 13px 3px  rgba(0, 0, 0, 0.12)",
-    source: "Material Design",
+    title: "#12",
+    source: "by Sketch",
+    value: "rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px"
   },
   {
-    title: "Inset 14",
-    value:
-      "5px 15px 9px 9px rgba(0, 0, 0, 0.23), 10px 8px 19px  rgba(0, 0, 0, 0.22)",
-    source: "HTMLCSSFreebies",
+    title: "#13",
+    source: "",
+    value: "rgba(17, 12, 46, 0.15) 0px 48px 100px 0px"
   },
   {
-    title: "Material Design Elevation 15",
-    value:
-      "2px 8px 14px  rgba(0, 0, 0, 0.26), 4px 14px 15px 5px rgba(0, 0, 0, 0.28)",
-    source: "DEV Community",
+    title: "#14",
+    source: "by Stripe",
+    value: "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"
   },
   {
-    title: "Inset 16",
-    value:
-      "3px 13px 20px  rgba(0, 0, 0, 0.27), 7px 3px 16px  rgba(0, 0, 0, 0.14), inset 6px 15px 9px  rgba(0, 0, 0, 0.11)",
-    source: "CSS Tricks",
+    title: "#15",
+    source: "by Stripe",
+    value: "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"
   },
   {
-    title: "Soft 17",
-    value:
-      "inset 4px 2px 12px  rgba(0, 0, 0, 0.2), 8px 11px 7px 9px rgba(0, 0, 0, 0.12), 13px 4px 19px  rgba(0, 0, 0, 0.17)",
-    source: "Material Design",
+    title: "#16",
+    source: "by Stripe",
+    value: "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"
   },
   {
-    title: "Colorful Glow 18",
-    value:
-      "7px 9px 6px  rgba(0, 0, 0, 0.13), 1px 12px 15px  rgba(0, 0, 0, 0.16), 2px 13px 11px  rgba(0, 0, 0, 0.22)",
-    source: "DEV Community",
+    title: "#17",
+    source: "by Stripe",
+    value: "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"
   },
   {
-    title: "Hard 19",
-    value: "inset 2px 4px 20px  rgba(0, 0, 0, 0.27)",
-    source: "DEV Community",
+    title: "#18",
+    source: "by Stripe",
+    value: "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"
   },
   {
-    title: "Material Design Elevation 20",
-    value:
-      "6px 8px 3px  rgba(0, 0, 0, 0.12), inset 7px 3px 12px  rgba(0, 0, 0, 0.3)",
-    source: "CSS Tricks",
+    title: "#19",
+    source: "by Stripe",
+    value: "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px"
   },
   {
-    title: "Long Shadow 21",
-    value:
-      "8px 11px 17px  rgba(0, 0, 0, 0.18), 15px 10px 18px  rgba(0, 0, 0, 0.25)",
-    source: "DEV Community",
+    title: "#20",
+    source: "by Stripe",
+    value: "rgb(38, 57, 77) 0px 20px 30px -10px"
   },
   {
-    title: "Outer Glow 22",
-    value: "3px 9px 10px  rgba(0, 0, 0, 0.16)",
-    source: "CSS Tricks",
+    title: "#21",
+    source: "by Stripe",
+    value: "rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset"
   },
   {
-    title: "Colorful Glow 23",
-    value: "13px 6px 11px  rgba(0, 0, 0, 0.22)",
-    source: "CSS Scan",
+    title: "#22",
+    source: "",
+    value: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px"
   },
   {
-    title: "Long Shadow 24",
-    value:
-      "13px 12px 5px 7px rgba(0, 0, 0, 0.28), 6px 11px 19px  rgba(0, 0, 0, 0.17)",
-    source: "CSS Scan",
+    title: "#23",
+    source: "",
+    value: "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"
   },
   {
-    title: "Light 25",
-    value:
-      "1px 10px 18px  rgba(0, 0, 0, 0.18), inset 13px 10px 14px 7px rgba(0, 0, 0, 0.29), 9px 2px 19px  rgba(0, 0, 0, 0.27)",
-    source: "Material Design",
+    title: "#24",
+    source: "",
+    value: "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px"
   },
   {
-    title: "Colorful Glow 26",
-    value: "inset 3px 11px 20px  rgba(0, 0, 0, 0.24)",
-    source: "HTMLCSSFreebies",
+    title: "#25",
+    source: "",
+    value: "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset"
   },
   {
-    title: "Hard 27",
-    value: "1px 5px 3px  rgba(0, 0, 0, 0.23)",
-    source: "HTMLCSSFreebies",
+    title: "#26",
+    source: "",
+    value: "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"
   },
   {
-    title: "Hard 28",
-    value: "7px 4px 15px 3px rgba(0, 0, 0, 0.3)",
-    source: "CSS Scan",
+    title: "#27",
+    source: "by Material",
+    value: "rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px"
   },
   {
-    title: "Soft 29",
-    value:
-      "3px 4px 11px  rgba(0, 0, 0, 0.24), 15px 11px 13px  rgba(0, 0, 0, 0.16), inset 1px 10px 14px  rgba(0, 0, 0, 0.16)",
-    source: "HTMLCSSFreebies",
+    title: "#28",
+    source: "by Material",
+    value: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px"
   },
   {
-    title: "Hard 30",
-    value:
-      "9px 15px 19px  rgba(0, 0, 0, 0.29), inset 15px 6px 18px  rgba(0, 0, 0, 0.22), 2px 12px 16px 6px rgba(0, 0, 0, 0.12)",
-    source: "CSS Tricks",
+    title: "#29",
+    source: "by Material",
+    value: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
   },
   {
-    title: "Outer Glow 31",
-    value:
-      "10px 11px 11px  rgba(0, 0, 0, 0.14), 8px 5px 17px  rgba(0, 0, 0, 0.29), 13px 9px 13px  rgba(0, 0, 0, 0.24)",
-    source: "CSS Scan",
+    title: "#30",
+    source: "by Material",
+    value: "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px"
   },
   {
-    title: "Soft 32",
-    value:
-      "15px 12px 11px  rgba(0, 0, 0, 0.18), 11px 10px 6px  rgba(0, 0, 0, 0.21), inset 6px 1px 11px  rgba(0, 0, 0, 0.25)",
-    source: "DEV Community",
+    title: "#31",
+    source: "by Material",
+    value: "rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px"
   },
   {
-    title: "Deep 33",
-    value:
-      "inset 2px 4px 8px  rgba(0, 0, 0, 0.26), inset 1px 3px 9px 2px rgba(0, 0, 0, 0.19), 13px 13px 16px 1px rgba(0, 0, 0, 0.21)",
-    source: "Material Design",
+    title: "#32",
+    source: "by Material",
+    value: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"
   },
   {
-    title: "3D Shadow 34",
-    value:
-      "0px 7px 9px 4px rgba(0, 0, 0, 0.27), 12px 9px 7px  rgba(0, 0, 0, 0.21)",
-    source: "Material Design",
+    title: "#33",
+    source: "by Material",
+    value: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px"
   },
   {
-    title: "Soft 35",
-    value:
-      "10px 2px 18px  rgba(0, 0, 0, 0.23), 8px 1px 10px  rgba(0, 0, 0, 0.14), inset 11px 1px 3px  rgba(0, 0, 0, 0.12)",
-    source: "CSS Tricks",
+    title: "#34",
+    source: "by Tailwind CSS",
+    value: "rgba(0, 0, 0, 0.05) 0px 0px 0px 1px"
   },
   {
-    title: "Outer Glow 36",
-    value:
-      "13px 13px 16px  rgba(0, 0, 0, 0.23), 10px 11px 19px  rgba(0, 0, 0, 0.1)",
-    source: "CSS Scan",
+    title: "#35",
+    source: "by Tailwind CSS",
+    value: "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px"
   },
   {
-    title: "Deep 37",
-    value:
-      "4px 4px 5px 10px rgba(0, 0, 0, 0.17), 4px 15px 11px  rgba(0, 0, 0, 0.11)",
-    source: "HTMLCSSFreebies",
+    title: "#36",
+    source: "by Tailwind CSS",
+    value: "rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px"
   },
   {
-    title: "Light 38",
-    value:
-      "12px 10px 6px 9px rgba(0, 0, 0, 0.28), 12px 8px 4px  rgba(0, 0, 0, 0.17)",
-    source: "CSS Scan",
+    title: "#37",
+    source: "by Tailwind CSS",
+    value: "rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px"
   },
   {
-    title: "Hard 39",
-    value: "12px 15px 4px 1px rgba(0, 0, 0, 0.22)",
-    source: "CSS Scan",
+    title: "#38",
+    source: "by Tailwind CSS",
+    value: "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px"
   },
   {
-    title: "Outer Glow 40",
-    value:
-      "6px 13px 5px  rgba(0, 0, 0, 0.29), inset 9px 7px 17px  rgba(0, 0, 0, 0.22)",
-    source: "HTMLCSSFreebies",
+    title: "#39",
+    source: "by Tailwind CSS",
+    value: "rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px"
   },
   {
-    title: "Long Shadow 41",
-    value: "6px 7px 5px 9px rgba(0, 0, 0, 0.22)",
-    source: "CSS Tricks",
+    title: "#40",
+    source: "by Tailwind CSS",
+    value: "rgba(0, 0, 0, 0.25) 0px 25px 50px -12px"
   },
   {
-    title: "Material Design Elevation 42",
-    value: "9px 2px 13px  rgba(0, 0, 0, 0.25)",
-    source: "Material Design",
+    title: "#41",
+    source: "by Tailwind CSS",
+    value: "rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset"
   },
   {
-    title: "Long Shadow 43",
-    value:
-      "6px 11px 7px 10px rgba(0, 0, 0, 0.25), inset 6px 4px 15px 4px rgba(0, 0, 0, 0.1), 11px 10px 9px  rgba(0, 0, 0, 0.13)",
-    source: "DEV Community",
+    title: "#42",
+    source: "",
+    value: "rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px"
   },
   {
-    title: "Soft 44",
-    value:
-      "3px 11px 16px  rgba(0, 0, 0, 0.24), 1px 10px 15px  rgba(0, 0, 0, 0.1), 1px 2px 3px 0px rgba(0, 0, 0, 0.25)",
-    source: "CSS Tricks",
+    title: "#43",
+    source: "by Tobias Ahlin",
+    value: "rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px"
   },
   {
-    title: "Inset 45",
-    value: "10px 11px 8px  rgba(0, 0, 0, 0.14)",
-    source: "Material Design",
+    title: "#44",
+    source: "by Tobias Ahlin",
+    value: "rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px"
   },
   {
-    title: "Deep 46",
-    value:
-      "inset 14px 12px 17px  rgba(0, 0, 0, 0.18), inset 13px 15px 5px  rgba(0, 0, 0, 0.26), 7px 11px 18px 9px rgba(0, 0, 0, 0.18)",
-    source: "Material Design",
+    title: "#45",
+    source: "by feedback.fish",
+    value: "rgba(0, 0, 0, 0.2) 0px 18px 50px -10px"
   },
   {
-    title: "Material Design Elevation 47",
-    value:
-      "12px 8px 10px  rgba(0, 0, 0, 0.3), 5px 8px 6px  rgba(0, 0, 0, 0.24)",
-    source: "CSS Tricks",
+    title: "#46",
+    source: "",
+    value: "rgba(0, 0, 0, 0.1) 0px 10px 50px"
   },
   {
-    title: "Soft 48",
-    value:
-      "10px 1px 7px  rgba(0, 0, 0, 0.19), inset 0px 5px 3px  rgba(0, 0, 0, 0.24)",
-    source: "CSS Scan",
+    title: "#47",
+    source: "",
+    value: "rgba(0, 0, 0, 0.04) 0px 3px 5px"
   },
   {
-    title: "3D Shadow 49",
-    value: "7px 5px 11px  rgba(0, 0, 0, 0.21)",
-    source: "HTMLCSSFreebies",
+    title: "#48",
+    source: "by Alligator",
+    value: "rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px"
   },
   {
-    title: "Inset 50",
-    value: "1px 15px 14px 4px rgba(0, 0, 0, 0.13)",
-    source: "HTMLCSSFreebies",
+    title: "#49",
+    source: "by Alligator",
+    value: "rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px"
   },
   {
-    title: "Outer Glow 51",
-    value: "3px 5px 19px  rgba(0, 0, 0, 0.24)",
-    source: "CSS Scan",
+    title: "#50",
+    source: "by Alligator",
+    value: "rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px"
   },
   {
-    title: "Colorful Glow 52",
-    value:
-      "3px 4px 8px 5px rgba(0, 0, 0, 0.22), 9px 12px 7px 8px rgba(0, 0, 0, 0.27)",
-    source: "CSS Scan",
+    title: "#51",
+    source: "",
+    value: "rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px"
   },
   {
-    title: "Long Shadow 53",
-    value:
-      "2px 2px 17px  rgba(0, 0, 0, 0.27), 14px 6px 4px 0px rgba(0, 0, 0, 0.21)",
-    source: "CSS Scan",
+    title: "#52",
+    source: "by pqina.nl/doka",
+    value: "rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em"
   },
   {
-    title: "Deep 54",
-    value:
-      "0px 8px 4px  rgba(0, 0, 0, 0.24), 15px 8px 15px 4px rgba(0, 0, 0, 0.14)",
-    source: "Material Design",
+    title: "#53",
+    source: "",
+    value: "rgba(0, 0, 0, 0.1) 0px 1px 2px 0px"
   },
   {
-    title: "Inset 55",
-    value:
-      "11px 8px 6px  rgba(0, 0, 0, 0.13), 10px 10px 5px  rgba(0, 0, 0, 0.28), inset 0px 3px 18px  rgba(0, 0, 0, 0.17)",
-    source: "Material Design",
+    title: "#54",
+    source: "by Github",
+    value: "rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset"
   },
   {
-    title: "Deep 56",
-    value:
-      "1px 15px 10px 8px rgba(0, 0, 0, 0.26), 7px 12px 10px  rgba(0, 0, 0, 0.19)",
-    source: "HTMLCSSFreebies",
+    title: "#55",
+    source: "by Github",
+    value: "rgba(3, 102, 214, 0.3) 0px 0px 0px 3px"
   },
   {
-    title: "3D Shadow 57",
-    value: "6px 8px 12px  rgba(0, 0, 0, 0.19)",
-    source: "CSS Tricks",
+    title: "#56",
+    source: "",
+    value: "rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px"
   },
   {
-    title: "Outer Glow 58",
-    value:
-      "3px 13px 10px  rgba(0, 0, 0, 0.23), 14px 3px 8px  rgba(0, 0, 0, 0.28), inset 12px 2px 17px 9px rgba(0, 0, 0, 0.13)",
-    source: "HTMLCSSFreebies",
+    title: "#57",
+    source: "by Facebook",
+    value: "rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset"
   },
   {
-    title: "Material Design Elevation 59",
-    value: "14px 3px 7px  rgba(0, 0, 0, 0.19)",
-    source: "DEV Community",
+    title: "#58",
+    source: "by Shopify",
+    value: "rgba(0, 0, 0, 0.15) 0px 5px 15px 0px"
   },
   {
-    title: "Soft 60",
-    value: "7px 13px 5px  rgba(0, 0, 0, 0.11)",
-    source: "DEV Community",
+    title: "#59",
+    source: "by Shopify",
+    value: "rgba(33, 35, 38, 0.1) 0px 10px 10px -10px"
   },
   {
-    title: "3D Shadow 61",
-    value: "12px 2px 16px  rgba(0, 0, 0, 0.28)",
-    source: "Material Design",
+    title: "#60",
+    source: "by Fossheim",
+    value: "blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px; border-radius: 0px"
   },
   {
-    title: "Soft 62",
-    value: "1px 11px 12px  rgba(0, 0, 0, 0.13)",
-    source: "Material Design",
+    title: "#61",
+    source: "by Fossheim",
+    value: "rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px; border-radius: 0px"
   },
   {
-    title: "Outer Glow 63",
-    value: "5px 9px 4px  rgba(0, 0, 0, 0.23)",
-    source: "HTMLCSSFreebies",
+    title: "#62",
+    source: "by boxshadows.com",
+    value: "rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset"
   },
   {
-    title: "Deep 64",
-    value: "inset 8px 8px 19px  rgba(0, 0, 0, 0.17)",
-    source: "CSS Scan",
+    title: "#63",
+    source: "by boxshadows.com",
+    value: "rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px"
   },
   {
-    title: "Deep 65",
-    value: "8px 9px 7px  rgba(0, 0, 0, 0.28)",
-    source: "HTMLCSSFreebies",
+    title: "#64",
+    source: "by box-shadows.co",
+    value: "rgba(17, 17, 26, 0.1) 0px 1px 0px"
   },
   {
-    title: "Inset 66",
-    value: "inset 8px 5px 15px  rgba(0, 0, 0, 0.27)",
-    source: "DEV Community",
+    title: "#65",
+    source: "by box-shadows.co",
+    value: "rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px"
   },
   {
-    title: "Material Design Elevation 67",
-    value:
-      "6px 6px 4px  rgba(0, 0, 0, 0.18), inset 8px 12px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px  rgba(0, 0, 0, 0.28)",
-    source: "CSS Tricks",
+    title: "#66",
+    source: "by box-shadows.co",
+    value: "rgba(17, 17, 26, 0.1) 0px 0px 16px"
   },
   {
-    title: "Long Shadow 68",
-    value:
-      "inset 3px 3px 11px 0px rgba(0, 0, 0, 0.14), 8px 9px 3px  rgba(0, 0, 0, 0.22), 0px 13px 15px 9px rgba(0, 0, 0, 0.21)",
-    source: "Material Design",
+    title: "#67",
+    source: "by box-shadows.co",
+    value: "rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px"
   },
   {
-    title: "Outer Glow 69",
-    value: "3px 7px 7px  rgba(0, 0, 0, 0.2)",
-    source: "CSS Scan",
+    title: "#68",
+    source: "by box-shadows.co",
+    value: "rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px"
   },
   {
-    title: "Outer Glow 70",
-    value: "1px 8px 14px  rgba(0, 0, 0, 0.23)",
-    source: "CSS Scan",
+    title: "#69",
+    source: "by box-shadows.co",
+    value: "rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px"
   },
   {
-    title: "Outer Glow 71",
-    value: "4px 3px 19px  rgba(0, 0, 0, 0.2)",
-    source: "Material Design",
+    title: "#70",
+    source: "by box-shadows.co",
+    value: "rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px"
   },
   {
-    title: "Deep 72",
-    value:
-      "inset 8px 3px 11px 1px rgba(0, 0, 0, 0.21), 10px 1px 14px 8px rgba(0, 0, 0, 0.12)",
-    source: "CSS Scan",
+    title: "#71",
+    source: "by box-shadows.co",
+    value: "rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px"
   },
   {
-    title: "Soft 73",
-    value:
-      "4px 11px 4px 4px rgba(0, 0, 0, 0.12), 7px 5px 10px  rgba(0, 0, 0, 0.2), inset 7px 11px 17px  rgba(0, 0, 0, 0.27)",
-    source: "HTMLCSSFreebies",
+    title: "#72",
+    source: "by 10er.app",
+    value: "rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px"
   },
   {
-    title: "Hard 74",
-    value: "10px 3px 8px 1px rgba(0, 0, 0, 0.2)",
-    source: "DEV Community",
+    title: "#73",
+    source: "by wip.chat",
+    value: "rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px"
   },
   {
-    title: "Material Design Elevation 75",
-    value:
-      "11px 1px 12px  rgba(0, 0, 0, 0.27), inset 15px 2px 11px 3px rgba(0, 0, 0, 0.14)",
-    source: "HTMLCSSFreebies",
+    title: "#74",
+    source: "",
+    value: "rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px"
   },
   {
-    title: "Deep 76",
-    value:
-      "11px 6px 13px 7px rgba(0, 0, 0, 0.16), 15px 10px 4px  rgba(0, 0, 0, 0.25), 4px 9px 7px  rgba(0, 0, 0, 0.15)",
-    source: "HTMLCSSFreebies",
+    title: "#75",
+    source: "by Airbnb",
+    value: "rgba(0, 0, 0, 0.15) 0px 3px 3px 0px"
   },
   {
-    title: "Colorful Glow 77",
-    value: "12px 3px 4px 4px rgba(0, 0, 0, 0.29)",
-    source: "CSS Tricks",
+    title: "#76",
+    source: "by Airbnb",
+    value: "rgba(0, 0, 0, 0.08) 0px 4px 12px"
   },
   {
-    title: "Material Design Elevation 78",
-    value: "4px 14px 3px  rgba(0, 0, 0, 0.15)",
-    source: "CSS Tricks",
+    title: "#77",
+    source: "by Airbnb",
+    value: "rgba(0, 0, 0, 0.15) 0px 2px 8px"
   },
   {
-    title: "Soft 79",
-    value: "11px 13px 10px  rgba(0, 0, 0, 0.15)",
-    source: "DEV Community",
+    title: "#78",
+    source: "by Airbnb",
+    value: "rgba(0, 0, 0, 0.18) 0px 2px 4px"
   },
   {
-    title: "Long Shadow 80",
-    value:
-      "inset 12px 4px 18px  rgba(0, 0, 0, 0.11), 1px 4px 4px 2px rgba(0, 0, 0, 0.16)",
-    source: "CSS Scan",
+    title: "#79",
+    source: "by ls.graphics",
+    value: "rgba(0, 0, 0, 0.1) -4px 9px 25px -6px"
   },
   {
-    title: "Long Shadow 81",
-    value: "9px 10px 6px 0px rgba(0, 0, 0, 0.24)",
-    source: "Material Design",
+    title: "#80",
+    source: "by ls.graphics",
+    value: "rgba(0, 0, 0, 0.2) 0px 60px 40px -7px"
   },
   {
-    title: "3D Shadow 82",
-    value:
-      "6px 15px 18px  rgba(0, 0, 0, 0.28), 14px 15px 7px  rgba(0, 0, 0, 0.25), 2px 12px 20px  rgba(0, 0, 0, 0.24)",
-    source: "CSS Tricks",
+    title: "#81",
+    source: "by Lonely Planet",
+    value: "rgba(0, 0, 0, 0.4) 0px 30px 90px"
   },
   {
-    title: "Long Shadow 83",
-    value:
-      "11px 10px 4px  rgba(0, 0, 0, 0.29), 1px 1px 10px 3px rgba(0, 0, 0, 0.14), 13px 8px 5px  rgba(0, 0, 0, 0.12)",
-    source: "DEV Community",
+    title: "#82",
+    source: "by Mac",
+    value: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px"
   },
   {
-    title: "Light 84",
-    value:
-      "14px 4px 17px  rgba(0, 0, 0, 0.1), 10px 12px 19px  rgba(0, 0, 0, 0.21)",
-    source: "CSS Scan",
+    title: "#83",
+    source: "by Mac",
+    value: "rgba(0, 0, 0, 0.2) 0px 20px 30px"
   },
   {
-    title: "Deep 85",
-    value:
-      "3px 9px 5px  rgba(0, 0, 0, 0.2), 5px 14px 15px 6px rgba(0, 0, 0, 0.15)",
-    source: "DEV Community",
+    title: "#84",
+    source: "by Mac",
+    value: "rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px"
   },
   {
-    title: "Long Shadow 86",
-    value: "7px 10px 7px  rgba(0, 0, 0, 0.27)",
-    source: "CSS Scan",
+    title: "#85",
+    source: "by pqina.nl/doka",
+    value: "rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset"
   },
   {
-    title: "Deep 87",
-    value:
-      "12px 4px 10px  rgba(0, 0, 0, 0.3), 1px 12px 7px  rgba(0, 0, 0, 0.3)",
-    source: "DEV Community",
+    title: "#86",
+    source: "by Typedream",
+    value: "rgba(0, 0, 0, 0.09) 0px 3px 12px"
   },
   {
-    title: "Colorful Glow 88",
-    value: "13px 9px 11px 3px rgba(0, 0, 0, 0.16)",
-    source: "CSS Tricks",
+    title: "#87",
+    source: "",
+    value: "rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; border-radius: 35px"
   },
   {
-    title: "Soft 89",
-    value:
-      "11px 5px 17px  rgba(0, 0, 0, 0.3), 14px 5px 11px  rgba(0, 0, 0, 0.19), 8px 2px 12px  rgba(0, 0, 0, 0.22)",
-    source: "CSS Tricks",
+    title: "#88",
+    source: "",
+    value: "rgba(0, 0, 0, 0.45) 0px 25px 20px -20px"
   },
   {
-    title: "Inset 90",
-    value:
-      "8px 3px 8px 0px rgba(0, 0, 0, 0.18), 15px 10px 17px 10px rgba(0, 0, 0, 0.17), 7px 2px 6px 5px rgba(0, 0, 0, 0.26)",
-    source: "CSS Tricks",
+    title: "#89",
+    source: "",
+    value: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset"
   },
   {
-    title: "3D Shadow 91",
-    value:
-      "inset 11px 7px 13px  rgba(0, 0, 0, 0.13), inset 1px 4px 3px  rgba(0, 0, 0, 0.23)",
-    source: "DEV Community",
+    title: "#90",
+    source: "",
+    value: "rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset"
   },
   {
-    title: "Inset 92",
-    value: "15px 5px 3px 1px rgba(0, 0, 0, 0.15)",
-    source: "DEV Community",
+    title: "#91",
+    source: "",
+    value: "rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset"
   },
   {
-    title: "Inset 93",
-    value:
-      "7px 3px 5px  rgba(0, 0, 0, 0.28), inset 13px 8px 16px  rgba(0, 0, 0, 0.26)",
-    source: "CSS Scan",
+    title: "#92",
+    source: "by Trello",
+    value: "rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px"
   },
   {
-    title: "Soft 94",
-    value: "14px 15px 18px 7px rgba(0, 0, 0, 0.15)",
-    source: "CSS Scan",
+    title: "#93",
+    source: "by Trello",
+    value: "rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px"
   },
   {
-    title: "Deep 95",
-    value:
-      "8px 14px 6px  rgba(0, 0, 0, 0.16), 1px 11px 7px  rgba(0, 0, 0, 0.16), 2px 7px 15px 5px rgba(0, 0, 0, 0.15)",
-    source: "HTMLCSSFreebies",
+    title: "#94",
+    source: "by Antimetal",
+    value: "rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px"
   },
   {
-    title: "Soft 96",
-    value:
-      "2px 3px 10px 7px rgba(0, 0, 0, 0.24), inset 14px 10px 12px  rgba(0, 0, 0, 0.15), 4px 7px 11px  rgba(0, 0, 0, 0.18)",
-    source: "CSS Scan",
-  },
-  {
-    title: "Hard 97",
-    value: "2px 14px 5px  rgba(0, 0, 0, 0.12)",
-    source: "HTMLCSSFreebies",
-  },
-  {
-    title: "Long Shadow 98",
-    value: "14px 1px 6px  rgba(0, 0, 0, 0.18)",
-    source: "CSS Tricks",
-  },
-  {
-    title: "Outer Glow 99",
-    value: "13px 4px 12px  rgba(0, 0, 0, 0.25)",
-    source: "CSS Tricks",
-  },
-  {
-    title: "Outer Glow 100",
-    value:
-      "12px 6px 19px  rgba(0, 0, 0, 0.29), 1px 5px 11px  rgba(0, 0, 0, 0.14), 0px 3px 11px  rgba(0, 0, 0, 0.26)",
-    source: "CSS Scan",
-  },
+    title: "#95",
+    source: "by Antimetal",
+    value: "rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px"
+  }
 ];
