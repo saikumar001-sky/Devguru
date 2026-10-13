@@ -1,105 +1,190 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------- Design tokens ---------- */
 :root {
-  --primary-col: "#FF725E";
-  --secondary-col: "#3a6cab";
-}
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remove default padding */
-ul[class],
-ol[class] {
-  padding: 0;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --surface-2: #f4f4f5;
+  --surface-3: #e9e9ec;
+  --border: #e4e4e7;
+  --border-strong: #d4d4d8;
+  --fg: #18181b;
+  --muted: #71717a;
+  --brand: #ea5a3f;
+  --brand-hover: #d84a30;
+  --brand-soft: #fdece8;
+  --brand-fg: #ffffff;
+  --success: #16a34a;
+  --success-soft: #dcfce7;
+  --danger: #dc2626;
+  --danger-soft: #fee2e2;
+  --warning: #d97706;
+  --warning-soft: #fef3c7;
+  color-scheme: light;
 }
 
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+.dark {
+  --bg: #0b0b0f;
+  --surface: #131318;
+  --surface-2: #1b1b22;
+  --surface-3: #25252e;
+  --border: #26262e;
+  --border-strong: #34343e;
+  --fg: #f4f4f5;
+  --muted: #9b9ba6;
+  --brand: #ff7a5c;
+  --brand-hover: #ff8f75;
+  --brand-soft: #2e1914;
+  --brand-fg: #1a0d09;
+  --success: #4ade80;
+  --success-soft: #0f2a1a;
+  --danger: #f87171;
+  --danger-soft: #2f1414;
+  --warning: #fbbf24;
+  --warning-soft: #2c2210;
+  color-scheme: dark;
 }
 
-/* Remove list styles on ul, ol elements with a class attribute */
-ul[class],
-ol[class] {
-  list-style: none;
+@theme inline {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-brand: var(--brand);
+  --color-brand-hover: var(--brand-hover);
+  --color-brand-soft: var(--brand-soft);
+  --color-brand-fg: var(--brand-fg);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
+/* ---------- Base ---------- */
+@layer base {
+  html,
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+  }
 
-/* Make images easier to work with */
-img {
-  max-width: 100%;
-  display: block;
-}
+  ::selection {
+    background: color-mix(in oklab, var(--brand) 30%, transparent);
+  }
 
-/* Natural flow and rhythm in articles by default */
-article > * + * {
-  margin-top: 1em;
-}
+  :focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
+  }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 }
 
-/* -------------------Main Styles start from here  -------------------*/
+/* ---------- Reusable primitives ---------- */
+@utility field {
+  @apply w-full rounded-lg border border-border bg-surface px-3 py-2 text-sm text-fg shadow-xs
+    transition-colors placeholder:text-muted/70
+    focus:border-brand focus:ring-3 focus:ring-brand/15 focus:outline-none
+    disabled:cursor-not-allowed disabled:opacity-60;
+}
 
-.main-wrapper {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+@utility field-mono {
+  @apply field font-mono text-[13px] leading-relaxed;
 }
-.main-section {
-  height: 90vh;
-  background-image:url(./assets/herosection.svg);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-  /* background-color: rgba(255, 255, 255, 0.1); */
+
+@utility label {
+  @apply mb-1.5 block text-xs font-medium tracking-wide text-muted uppercase;
 }
-.logger-height{
-  height: 67vh;
+
+@utility scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
 }
-input[type='file']{
-  display: none;
+
+/* ---------- Long-form documentation ---------- */
+@layer components {
+  .prose-doc {
+    @apply max-w-none text-[15px] leading-7 text-fg/90;
+  }
+  .prose-doc :where(h2):not(:where(.not-prose *)) {
+    @apply mt-12 mb-3 scroll-mt-24 border-b border-border pb-2 text-xl font-semibold tracking-tight text-fg;
+  }
+  .prose-doc :where(h2):first-child {
+    @apply mt-0;
+  }
+  .prose-doc :where(h3):not(:where(.not-prose *)) {
+    @apply mt-8 mb-2 scroll-mt-24 text-base font-semibold text-fg;
+  }
+  .prose-doc :where(p):not(:where(.not-prose *)) {
+    @apply my-3;
+  }
+  .prose-doc :where(ul, ol):not(:where(.not-prose *)) {
+    @apply my-3 space-y-1.5 pl-5;
+  }
+  .prose-doc :where(ul):not(:where(.not-prose *)) {
+    @apply list-disc marker:text-muted;
+  }
+  .prose-doc :where(ol):not(:where(.not-prose *)) {
+    @apply list-decimal marker:text-muted;
+  }
+  .prose-doc :where(a):not(:where(.not-prose *)) {
+    @apply font-medium text-brand underline decoration-brand/30 underline-offset-2 hover:decoration-brand;
+  }
+  .prose-doc :where(:not(pre) > code):not(:where(.not-prose *)) {
+    @apply rounded-md bg-surface-2 px-1.5 py-0.5 font-mono text-[13px] text-fg;
+  }
+  .prose-doc :where(table):not(:where(.not-prose *)) {
+    @apply my-4 block w-full overflow-x-auto text-sm;
+  }
+  .prose-doc :where(th):not(:where(.not-prose *)) {
+    @apply border-b border-border-strong px-3 py-2 text-left text-xs font-semibold whitespace-nowrap text-muted;
+  }
+  .prose-doc :where(td):not(:where(.not-prose *)) {
+    @apply border-b border-border px-3 py-2 align-top;
+  }
+  .prose-doc :where(strong):not(:where(.not-prose *)) {
+    @apply font-semibold text-fg;
+  }
+
+  /* Syntax token colors (lezer classHighlighter + the shell/yaml tokenizer). */
+  .code-block .tok-keyword,
+  .code-block .tok-operatorKeyword { color: #c2410c; }
+  .code-block .tok-string,
+  .code-block .tok-string2 { color: #15803d; }
+  .code-block .tok-comment { color: var(--muted); font-style: italic; }
+  .code-block .tok-number,
+  .code-block .tok-bool,
+  .code-block .tok-atom { color: #7c3aed; }
+  .code-block .tok-propertyName { color: #0369a1; }
+  .code-block .tok-variableName.tok-definition,
+  .code-block .tok-function { color: #b45309; }
+  .code-block .tok-variableName { color: #be185d; }
+  .dark .code-block .tok-keyword,
+  .dark .code-block .tok-operatorKeyword { color: #ff9e7a; }
+  .dark .code-block .tok-string,
+  .dark .code-block .tok-string2 { color: #86efac; }
+  .dark .code-block .tok-number,
+  .dark .code-block .tok-bool,
+  .dark .code-block .tok-atom { color: #c4b5fd; }
+  .dark .code-block .tok-propertyName { color: #7dd3fc; }
+  .dark .code-block .tok-variableName.tok-definition,
+  .dark .code-block .tok-function { color: #fcd34d; }
+  .dark .code-block .tok-variableName { color: #f9a8d4; }
 }
