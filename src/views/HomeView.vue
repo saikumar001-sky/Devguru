@@ -2,6 +2,9 @@
 import { ArrowUpRight, ShieldCheck, Zap } from "lucide-vue-next";
 import { categories, tools } from "@/tools";
 
+// The SecretHawk docs live in the registry too, but they aren't a tool.
+const toolCount = tools.filter((tool) => tool.category !== "Docs").length;
+
 const groups = categories.map((category) => ({
   category,
   items: tools.filter((tool) => tool.category === category),
@@ -21,7 +24,7 @@ const groups = categories.map((category) => ({
         <p
           class="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface-2 px-3 py-1 text-xs font-medium text-muted"
         >
-          <Zap class="size-3.5 text-brand" /> {{ tools.length }} tools · zero sign-up
+          <Zap class="size-3.5 text-brand" /> {{ toolCount }} tools · zero sign-up
         </p>
         <h1 class="mt-5 text-3xl font-bold tracking-tight text-balance sm:text-5xl">
           The everyday toolbox for <span class="text-brand">developers & testers</span>
