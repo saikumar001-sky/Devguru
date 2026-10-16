@@ -64,5 +64,11 @@ const groups = categories.map((category) => ({
         </RouterLink>
       </div>
     </section>
+
+    <footer class="border-t border-border pt-6 text-center text-sm text-muted">
+      Built by
+      <RouterLink to="/about" class="font-medium text-fg hover:text-brand">Andhili Saikumar</RouterLink>
+      · Frontend Developer
+    </footer>
   </div>
 </template>

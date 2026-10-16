@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { House, ShieldCheck, X } from "lucide-vue-next";
+import { House, ShieldCheck, UserRound, X } from "lucide-vue-next";
 import { categories, tools } from "@/tools";
 import AppLogo from "./AppLogo.vue";
 
@@ -59,6 +59,12 @@ const activeClass = "!bg-brand-soft !text-brand";
         >
           <component :is="tool.icon" class="size-4" />
           {{ tool.title }}
+        </RouterLink>
+      </div>
+
+      <div class="mt-5 border-t border-border pt-4">
+        <RouterLink to="/about" :class="linkClass" :active-class="activeClass">
+          <UserRound class="size-4" /> About the developer
         </RouterLink>
       </div>
     </nav>

@@ -36,6 +36,10 @@ const themeIcon = computed(() => ({ light: Sun, dark: Moon, system: Monitor })[p
         <ChevronRight class="size-3.5 text-muted" />
         <span class="font-medium">{{ tool.title }}</span>
       </template>
+      <template v-else-if="route.name === 'about'">
+        <ChevronRight class="size-3.5 text-muted" />
+        <span class="font-medium">About</span>
+      </template>
     </nav>
 
     <div class="ml-auto flex items-center gap-2">
